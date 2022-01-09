@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0.4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: rgb(51, 119, 170);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.651);
+}
+
+main {
+    margin: 10px 20px;
+}
+
+.home-img {
+    margin: auto;
+    object-fit: cover;
+    max-height: 200px; 
+    border-radius: 5px;   
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.651);
+}
+
+.title-name {
+    align-self: center;
+    text-align: center;
+    color: #DDE;
+    font-size: 3em;
+}
+
+.course-title {
+    font-size: 2.5em;
+}
+
+.reminder  {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(51, 119, 170);
+    margin: 30px 20px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.651);
+}
+
+.footer-grid p {
+    align-self: center;
+    text-align: center;
+}
+
+.copyright {
+    color: #DDE;
+}
+
+.updated-text {
+    color:rgb(243, 247, 57);
+}
