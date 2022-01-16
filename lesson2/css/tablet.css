@@ -1,7 +1,5 @@
 .container {
     grid-template-columns: 1fr 1fr;
-    align-self: center;
-    margin: auto;
 }
 
 .section-3 {
