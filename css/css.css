@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    margin: 0.4em;
+    margin: 0 auto;
+    /* margin: 0.4em; */
     font-family: 'Roboto', sans-serif;
     max-width: 900px;
 }
@@ -18,6 +19,12 @@
 
 main {
     margin: 10px 20px;
+    align-content: center;
+    
+}
+
+hr {
+    margin: 0.4em auto;
 }
 
 .home-img {
