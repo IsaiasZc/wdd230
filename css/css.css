@@ -3,12 +3,13 @@
 * {
     margin: 0.4em;
     font-family: 'Roboto', sans-serif;
+    max-width: 900px;
 }
 
 .header-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: rgb(51, 119, 170);
+    background-color: #0A446B;
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -29,7 +30,7 @@ main {
 .title-name {
     align-self: center;
     text-align: center;
-    color: #DDE;
+    color: #FFF;
     font-size: 3em;
 }
 
@@ -45,7 +46,7 @@ main {
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: rgb(51, 119, 170);
+    background-color: #0A446B;
     margin: 30px 20px;
     padding: 10px;
     border-radius: 7px;
@@ -58,7 +59,7 @@ main {
 }
 
 .copyright {
-    color: #DDE;
+    color: #FFF;
 }
 
 .updated-text {
