@@ -1,0 +1,17 @@
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    
+}
+
+div#logo-cont {
+    max-width: 425px;
+}
+
+img#logo-img {
+    width: 100%;
+}

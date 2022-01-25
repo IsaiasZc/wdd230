@@ -1,0 +1,66 @@
+/* https://coolors.co/9f9d91-c5c32c-444341-dc0835-1e9da4 */
+* {
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.4em;
+}
+
+p, a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    padding: 1em;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0.4em;
+    text-align: center;
+
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+div#logo-cont {
+    /* vertical-align: center; */
+    text-align: center;
+    margin: auto;
+    min-width: 300px;
+}
+
+#logo-img {
+    margin: auto;
+    display: block;
+    width: 60%;
+}
+
+main {
+    padding: 0.2em;
+    margin: 0 0.5em;
+}
+
+header, footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #1E9DA4;
+    /* padding: 20px; */
+    /* width: 100%; */
+}
+
+footer p {
+    padding: 0.2em;
+}
