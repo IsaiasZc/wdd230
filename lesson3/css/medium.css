@@ -15,3 +15,16 @@ div#logo-cont {
 img#logo-img {
     width: 100%;
 }
+
+#personas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav-example {
+    text-align: center;
+}
+
+/* .persona-2 {
+    grid-column: span 1;
+} */

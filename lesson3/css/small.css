@@ -7,7 +7,7 @@ h1, h2, h3, h4 {
     padding: 0.4em;
 }
 
-p, a {
+p, a,li {
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     padding: 1em;
@@ -28,12 +28,42 @@ a {
     color: #000000;
     text-decoration: none;
 }
+#nav-1 {
+    background: linear-gradient(90deg, transparent, #C5C32C, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-2 {
+    background: linear-gradient(90deg, transparent, #DC0835, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-3 {
+    background: linear-gradient(90deg, transparent, #1E9DA4, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-4 {
+    background: linear-gradient(90deg, transparent, #9F9D91, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-1:hover,
+#nav-2:hover,
+#nav-3:hover,
+#nav-4:hover {
+    --d: 100%;
+}
 
 div#logo-cont {
     /* vertical-align: center; */
     text-align: center;
     margin: auto;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 #logo-img {
@@ -47,6 +77,10 @@ main {
     margin: 0 0.5em;
 }
 
+#domain-link{
+    padding: 0;
+    color: #2d0aac;
+}
 header, footer {
     display: flex;
     flex-flow: column;
@@ -63,4 +97,74 @@ footer {
 
 footer p {
     padding: 0.2em;
+}
+
+
+/** Target Audience */
+
+.personas {
+    display: grid;
+    background-color: #9F9D91;
+    color: #FFFFFF;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0.5em;
+}
+
+.personas h3, h4 {
+    margin: 0.7rem 1.2rem;
+    font-weight: bolder;
+}
+
+.personas p {
+    margin: 0.9rem 1.2rem;
+    padding: 0 0.4em;
+    margin-top: 0;
+
+}
+
+.personas ul li {
+    margin: 0.9rem 1.2rem;
+    list-style: none;
+    margin-top: 0;
+    padding: 0 0.4em;
+}
+
+/** Color Scheme */
+
+#nav-example-1 {
+    background: linear-gradient(90deg, transparent, #C5C32C, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-example-2 {
+    background: linear-gradient(90deg, transparent, #DC0835, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-example-3 {
+    background: linear-gradient(90deg, transparent, #1E9DA4, transparent) top /
+    var(--d, 0) 5px no-repeat;
+    transition: 0.5s;
+}
+
+#nav-example-1:hover,
+#nav-example-2:hover,
+#nav-example-3:hover {
+    --d: 75%;
+}
+
+#color-img {
+    margin-left: 10px;
+}
+
+main button {
+    font-family: 'Nunito', sans-serif;
+    padding: 0.4 0.5em;
+    border-radius: 0.3em;
+    border-color: transparent;
+    background-color: #1E9DA4;
+    color: white;
+    margin: 0.5em;
 }
