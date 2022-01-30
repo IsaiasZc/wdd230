@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    background: #9F9D91;
+    width: auto;
+    padding-bottom: .4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav div#nav-cont {
+    align-items: center;
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#navLogo {
+    max-width: 10rem;
+}
+
+#navLogo img {
+    width: 100%;
+}
+
+nav #nav-cont button {
+    text-align: right;
+    display: block;
+    border: none;
+    background: transparent;
+    color: #111;
+    font-size: 1.5rem;
+}
+
+#hambButton span:nth-child(1){ display: block;} 
+#hambButton span:nth-child(2){ display: none;} 
+
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 0.4rem 0.6rem;
+}
+
+nav ul li a:hover {
+    background-color: rgba(50,50,50,.2);
+}
+
+/* display the menu on click with JS  */
+
+nav ul.open {
+    display: block;
+}
+
+#hambButton.open span:nth-child(1){ display: none;} 
+#hambButton.open span:nth-child(2){ display: block;} 
+
+#current-time-container {
+    margin: .4rem;
+    border: 1px solid #c5c2b3;
+    background-color: rgba(180,180,180,.2);
+}
+
+#currentTime {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: .2rem;
+
+}
+/** main content  */
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.sections {
+    margin: .4rem;
+    border: 1px solid #444341;
+    background-color: #3D3A3B;
+    color: #FFF;
+    padding: 0.8rem;
+    min-height: 12rem;
+
+}
+
+main section.sections h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+section#spotlight .spots{
+    display: block;
+    padding: .6rem;
+    height: 11rem;
+    border: 1px solid #9F9D91;
+}
+
+section#spotlight .spot3 {
+    display: none;
+}
+
+/* footer css */
+
+footer {
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+footer hr{ 
+    margin: .4rem;   
+    color: #3d3a3b; 
+}
+
