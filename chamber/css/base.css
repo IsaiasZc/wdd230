@@ -10,20 +10,24 @@ p{
     font-family: 'Nunito', sans-serif;
 }
 
-nav {
+/* nav { */
+header {
     background: #9F9D91;
     width: auto;
     padding-bottom: .4rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-nav div#nav-cont {
+nav {
     align-items: center;
     margin: 0;
     padding: .5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "a b c";
+    /* flex-wrap: wrap; */
+    /* flex-direction: row;
+    justify-content: space-between; */
+    order: 1;
 }
 
 #navLogo {
@@ -34,13 +38,38 @@ nav div#nav-cont {
     width: 100%;
 }
 
-nav #nav-cont button {
+/** social icons */
+
+nav div.icons {
+    
+
+    display: flex;
+    justify-content: flex-end;
+    /* align-content: flex-end; */
+    align-content: center;
+    order: 2;
+    align-items: center;
+}
+
+div.facebook, div.linkedin {
+    padding: 0 .2rem;
+    max-width: 2rem;
+}
+
+div.facebook img, div.linkedin img {
+    width: 90%;
+}
+
+/* nav #nav-cont button { */
+nav button#hambButton {
+
     text-align: right;
     display: block;
     border: none;
     background: transparent;
     color: #111;
     font-size: 1.5rem;
+    order: 3;
 }
 
 #hambButton span:nth-child(1){ display: block;} 
@@ -51,6 +80,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    order: 4;
 }
 
 nav ul li a {

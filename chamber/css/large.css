@@ -3,22 +3,33 @@ body {
     margin: 0 auto;
 }
 
-nav {
+/* nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul.firstNav{
     display: flex;
     align-items: center;
+    order: 2;
 
+}
+
+nav div.icons {
+    order: 3;
 }
 
 nav div#current-time-container {
     display: block;
 }
 
-nav #nav-cont button {
+nav button#hambButton {
     display: none;
 }
 
