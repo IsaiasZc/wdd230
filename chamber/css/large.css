@@ -51,6 +51,12 @@ nav button#hambButton {
 
 #hero {
     grid-area: hero;
+    height: 25.3rem;
+}
+
+#hero picture img {
+    min-height: 12rem;
+    height: 100%;
 }
 
 #spotlight {

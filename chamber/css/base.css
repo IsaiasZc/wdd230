@@ -140,8 +140,36 @@ main section.sections {
     padding: 0;
     min-height: 12rem;
     text-align: center;
-
 }
+
+/** hero image */
+#hero *{
+    padding: 0;
+}
+
+#hero {
+    height: 12rem;
+}
+
+#hero h2{
+    position: absolute;
+}
+
+#hero picture {
+    width: auto;
+}
+
+#hero div *{
+    padding: 0;
+}
+
+#hero picture img {
+    object-fit: cover;
+    width: 100%;
+    height: 12rem;
+}
+
+/* end hero image */
 
 main section.sections *{
     padding: .4rem;
