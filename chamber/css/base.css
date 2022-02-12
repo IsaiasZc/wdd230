@@ -27,7 +27,9 @@ nav {
     margin: 0;
     padding: .5rem;
     display: grid;
-    grid-template-areas: "a b c";
+    grid-template-areas: 
+        "a b c"
+        "d d d";
     /* flex-wrap: wrap; */
     /* flex-direction: row;
     justify-content: space-between; */
@@ -83,10 +85,15 @@ nav button#hambButton {
 
 nav ul {
     display: none;
+    grid-area: d;
     list-style: none;
     padding: 0;
     margin: 0;
     order: 4;
+}
+
+ul#firstNav li {
+    display: inline;
 }
 
 nav ul li a {
@@ -95,10 +102,28 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     padding: 0.4rem 0.6rem;
+    border-top: 0.375rem solid #FFF;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: rgba(50,50,50,.2);
+nav ul li:nth-child(1) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #D11848 ;
+}
+
+nav ul li:nth-child(2) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #f4b42a ;
+}
+
+nav ul li:nth-child(3) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #1E9DA4 ;
+}
+
+nav ul li:nth-child(4) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #C5C32C ;
 }
 
 /* display the menu on click with JS  */
