@@ -18,6 +18,9 @@ main section.sections {
     margin: .3rem;
 }
 
+#hero {
+    border: none;
+}
 #events {
     grid-row: 5 / 6;
     grid-column: span 2;
