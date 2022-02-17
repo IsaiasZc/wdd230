@@ -41,3 +41,18 @@ window.onresize = () => {
     button.classList.remove('open')
     }
 }
+
+// Banner for Mondays and Tuesdays
+
+let currentDay = date.getDay();
+console.log(currentDay)
+
+if(currentDay === 1 || currentDay === 2){
+    let banner = document.querySelector("#banner");
+    banner.classList.add("active-banner");
+
+    let closeBanner = document.querySelector(".close-banner");
+    closeBanner.addEventListener("click", () => {
+        banner.remove()
+    })
+}

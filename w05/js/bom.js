@@ -3,6 +3,7 @@ const button = document.querySelector('button');
 const list = document.querySelector('.list');
 
 let newListItem = () => {
+    if(input.value !== ""){
     let newLi = document.createElement('li');
     let newButton = document.createElement('button');
     let newSpan = document.createElement('span');
@@ -16,7 +17,7 @@ let newListItem = () => {
     newButton.addEventListener('click', () =>{ 
         newLi.remove();
         input.focus();
-    });
+    })}
 }
 
 
