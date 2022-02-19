@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+}
+.container h1, picture {
+    display: block;
+}
+
+div picture img[data-src] {
+    filter: blur(.3em);
+}
+
+div picture img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
