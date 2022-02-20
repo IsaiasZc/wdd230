@@ -1,6 +1,10 @@
 * {
     margin: 0;
 }
+/* 
+html, body {
+    width: 100%;
+} */
 
 body {
     background-color: #F8F8F8;
@@ -72,7 +76,7 @@ nav {
     max-width: 10rem;
 }
 
-#navLogo img {
+#navLogo a img {
     width: 100%;
 }
 
@@ -360,3 +364,50 @@ footer div.foot1-2 p a{
     color: black;
     text-decoration: none;
 }
+
+/* discover page  */
+
+/* 
+section.galery div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+} */
+
+section.galery div {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    align-items: center;
+}
+
+picture.disco-pic-size {
+    width: auto;    
+}
+
+section.galery div p {
+    padding: 1rem;
+}
+
+picture.disco-pic-size img {
+    width: 100%;
+}
+
+.left-discover {
+    opacity: 0;
+    transform: translate(-15vh,0);
+    transition: all 1s;
+}
+
+.right-discover {
+    opacity: 0;
+    transform: translate(15vh,0);
+    transition: all 1s;
+}
+
+.galery-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+

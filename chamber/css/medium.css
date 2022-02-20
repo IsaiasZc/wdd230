@@ -61,3 +61,24 @@ footer div.foot2 p:not(.modify){
     border-right: .1rem solid black;
     padding-right: 2rem;
 }
+
+/* discover page */
+main section.galery {
+    margin: 0 2rem;
+}
+
+section.galery div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+section.galery div.right-discover picture {
+    order: 2;
+}
+
+section.galery div.right-discover p {
+    order: 1;
+}

@@ -101,3 +101,11 @@ section#spotlight .spots{
 section#spotlight .spot3 {
     display:block;
 }
+
+/* footer  */
+
+footer {
+    position: absolute;
+    width: 100%;
+    /* bottom: 0; */
+}

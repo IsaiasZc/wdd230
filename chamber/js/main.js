@@ -45,7 +45,6 @@ window.onresize = () => {
 // Banner for Mondays and Tuesdays
 
 let currentDay = date.getDay();
-console.log(currentDay)
 
 if(currentDay === 1 || currentDay === 2){
     let banner = document.querySelector("#banner");
@@ -56,3 +55,28 @@ if(currentDay === 1 || currentDay === 2){
         banner.remove()
     })
 }
+
+// discover page
+window.addEventListener("load", () => {
+    let imagesLoad = document.getElementsByClassName("img-load");
+    for(var i=0; i < imagesLoad.length; i++) {
+        let image = imagesLoad[i];
+        image.classList.add("galery-visible");
+    }
+})
+
+window.addEventListener("scroll", () => {
+    let elements = document.getElementsByClassName("galery-discover");
+    let screenResize = window.innerHeight;
+
+    for(var i=0; i < elements.length; i++){
+        let element = elements[i];
+
+        if (element.getBoundingClientRect().top < screenResize) {
+            element.classList.add("galery-visible");
+        } else {
+            element.classList.remove("galery-visible");
+        }
+    }
+
+})
