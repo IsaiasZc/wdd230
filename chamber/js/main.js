@@ -80,3 +80,26 @@ window.addEventListener("scroll", () => {
     }
 
 })
+
+// Number of visits in local storage
+
+const visitsDisplay = document.getElementById("visits-display");
+
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `first`;
+}
+
+// increment the number of visits.
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
+
+// closing this visits banner
+const visitsBanner = document.querySelector("#visit-container");
+const closeVisitsBanner = document.querySelector(".close-visits-banner");
+closeVisitsBanner.addEventListener("click", () => {
+        visitsBanner.remove()})

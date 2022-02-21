@@ -24,7 +24,7 @@ p{
 div.banner {
     display: flex;
     justify-content: space-around;
-    padding: .5rem;
+    padding: .5rem 1rem;
     font-family: 'Nunito', sans-serif;
     background-color: #D11848;
     color: #FFF;
@@ -411,3 +411,23 @@ picture.disco-pic-size img {
     transform: translate(0, 0);
   }
 
+#visit-container {
+    display: flex;
+    justify-content: space-around;
+    padding: .3rem 1rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4b42a;
+    color: #FFF;
+    align-items: center;
+    margin-top: .1rem;
+    font-weight: bold;
+
+}
+
+button.close-visits-banner {
+    border: none;
+    background-color: #f4b42a;
+    color: #FFF;
+    font-size: 1.3rem;
+    transition: .2s;
+}
