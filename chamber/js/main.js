@@ -103,3 +103,39 @@ const visitsBanner = document.querySelector("#visit-container");
 const closeVisitsBanner = document.querySelector(".close-visits-banner");
 closeVisitsBanner.addEventListener("click", () => {
         visitsBanner.remove()})
+
+// lazy images in discover.html
+
+const galeryImages = document.querySelectorAll(".galery__div-picture-img");
+
+function preLoadGalery(img) {
+    const src=img.getAttribute("data-src");
+    if (!src) {
+        return;
+    }
+
+    img.src = src;
+    img.onload = () => {
+        img.removeAttribute("data-src");
+    }
+}
+
+const galeryImgOptions = {
+    // threshold = 0,
+    rootmargin: "0 0 300px 0",
+};
+
+const imgObserver = new IntersectionObserver((entries,imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preLoadGalery(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+}, galeryImgOptions)
+
+galeryImages.forEach(image => {
+    imgObserver.observe(image);
+})
