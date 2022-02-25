@@ -1,0 +1,55 @@
+:root {
+    --heading: #7fb9c2;
+    --th: #628ca6;
+    --even: #e7ffed;
+    --odd: #e7f0ed;
+    --border: #b9baba;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#table-container {
+    margin: 3em auto;
+    /* padding: 1em; */
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, tr, td {
+    border: 1px solid var(--border);
+    padding: .4em;
+}
+
+th#title {
+    background-color: var(--heading);
+    font-size: 1.4rem;
+}
+#table-container tr:nth-child(2) {
+    background-color: var(--th);
+    color: #FFF;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--odd);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--even);
+}
+
+.november__td {
+    background-color: var(--th);
+    color: #FFF;
+}
+
+#black-friday {
+    font-style: italic;
+}
+
+#compiled-tr{
+    font-size: 12px;
+    background-color: var(--heading);
+}
