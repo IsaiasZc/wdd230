@@ -82,3 +82,23 @@ section.galery div.right-discover picture {
 section.galery div.right-discover p {
     order: 1;
 }
+
+/* join page  */
+
+main#main-join-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+/* form#join-form label, form#join-form div {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    padding-left: 1rem;
+} */
+
+
+/* form#join-form {
+    max-width: 50%;
+} */
