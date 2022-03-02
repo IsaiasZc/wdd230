@@ -555,6 +555,21 @@ div.plans-container__div:nth-child(1) {
 }
 
 
+/* thanks page */
+
+#thanks-container {
+    min-height: 70vh;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+
+#thanks-container p {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+
+
 /* 
 #join-form label.join_form__label input:required {
     border: 1px solid var(--aqua-accent);
