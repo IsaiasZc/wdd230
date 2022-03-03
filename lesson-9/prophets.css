@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    border-radius: 10px;
+    box-shadow: 0 0 15px #b1b1b1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
+}
+
+.cards section {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #c1c1c1;
+    margin: 1rem;
+    background-color: #add8e6;
+}
+.cards section p, .cards section h2 {
+    padding-left: .4rem;
+}
+
+.cards section img {
+    max-width: 100%;
+    padding: .2rem;
+    border-radius: .7rem;
+
+}
+
+footer {
+    padding: 1.5rem 0;
+    text-align: center;
+
+}
