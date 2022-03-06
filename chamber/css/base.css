@@ -10,6 +10,8 @@
     --green-accent: #c5c32c;
     --invalid: #ca4141;
     --border-accent: #C1C1C1;
+    --aqua-lower: #D4EAEC;
+    --btn-active: #e2fdff;
 } 
 /* 
 html, body {
@@ -586,3 +588,97 @@ div.plans-container__div:nth-child(1) {
 #join-form label.join_form__label input:focus:invalid {
     border: none;
 } */
+
+
+/******************* Directory ************/
+
+/* .directory-cards {
+    padding: 1rem;
+    border: 1px solid #D4D3D3;
+} */
+
+h2.directory-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+/* Buttons */
+
+.directory-buttons {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.directory-buttons div {
+    display: inline;
+}
+
+.directory-buttons button {
+    padding: .35rem;
+    margin: .4rem;
+    border: 1px solid var(--aqua-accent);
+    border-radius: .25rem;
+
+}
+
+.directory-buttons button img{
+    vertical-align: middle;
+}
+
+/* container */ 
+
+.directory-cards {
+    margin: 1rem 1.5rem;
+}
+
+.directory-cards section {
+    margin:  .5rem 0;
+    padding: 1rem;
+    /* transition: .5s; */
+}
+
+.directory-cards p, .directory-cards h2 {
+    padding: .3rem;
+}
+
+section.grid-display {
+    border-radius: 3px;
+    border: 1px solid #D4D3D3;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+section.grid-display h2 {
+    display: none;
+}
+
+section.grid-display img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+    max-width: 80%;
+    /* max-height: ; */
+    text-align: center;
+}
+
+section.list-display h2 {
+    font-size: 1.15rem;
+}
+
+section.list-display img {
+    display: none;
+}
+
+section.list-display:nth-child(odd) {
+    background-color: var(--aqua-lower);
+}
+
+/* section.views {
+    background-color: red;
+} */
+
+button.active {
+    background-color: var(--btn-active);
+}

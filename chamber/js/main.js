@@ -87,9 +87,9 @@ const visitsDisplay = document.getElementById("visits-display");
 
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-if (numVisits !== 0) {
+if (numVisits !== 0 && visitsDisplay !== null ) {
 	visitsDisplay.textContent = numVisits;
-} else {
+} else if(numVisits === 0 && visitsDisplay !== null) {
 	visitsDisplay.textContent = `first`;
 }
 
@@ -101,14 +101,17 @@ localStorage.setItem("visits-ls", numVisits);
 // closing this visits banner
 const visitsBanner = document.querySelector("#visit-container");
 const closeVisitsBanner = document.querySelector(".close-visits-banner");
-closeVisitsBanner.addEventListener("click", () => {
-        visitsBanner.remove()})
+if(closeVisitsBanner !== null){
+    closeVisitsBanner.addEventListener("click", () => {
+    visitsBanner.remove()})
+}
 
-// lazy images in discover.html
+//* lazy images in discover.html
 
 const galeryImages = document.querySelectorAll(".galery__div-picture-img");
 
 function preLoadGalery(img) {
+    console.log(img);
     const src=img.getAttribute("data-src");
     if (!src) {
         return;
@@ -130,6 +133,7 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
         if (!entry.isIntersecting) {
             return;
         } else {
+            console.log("entry");
             preLoadGalery(entry.target);
             imgObserver.unobserve(entry.target);
         }

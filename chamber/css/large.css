@@ -109,3 +109,9 @@ footer {
     width: 100%;
     /* bottom: 0; */
 }
+
+/******************* Directory ************/
+
+div.directory-grid-container {
+    grid-template-columns: repeat(3,1fr);
+}

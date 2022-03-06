@@ -42,16 +42,14 @@
         </nav>
         <div id='current-time-container'><span id='currentTime'></span></div>
     </header>
-    <!-- <div id="visit-container">
-        <p>This is your <span id="visits-display"></span> visit!</p>
-        <button class="close-visits-banner">&#10006;</button>
-    </div> -->
-
-    <main id="thanks-container">
-        <h1>Thanks for joining the Chamber of Commerce!</h1>
-        <p>We will send you an email with all the information about your subscription.</p>
+    <main>
+        <h2 class="directory-title">Business Directory</h2>
+        <div class="directory-buttons">
+            <button id="grid-view"><img src="./icons/grid-button.png" alt="grid-icon"></button>
+            <button id="list-view"><img src="./icons/list-button.png" alt="list-icon"></button>
+        </div>
+        <div class="directory-cards"></div>
     </main>
-
     <footer>
         <div class="foot1">
             <div class="foot1-1">
@@ -77,5 +75,6 @@
         </div>
     </footer>
     <script src='./js/main.js'></script>
+    <script src="./js/directory.js"></script>
 </body>
 </html>

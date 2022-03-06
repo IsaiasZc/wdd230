@@ -102,3 +102,26 @@ main#main-join-container {
 /* form#join-form {
     max-width: 50%;
 } */
+
+/******************* Directory ************/
+
+section.list-display {
+    display: grid;
+    grid-template-columns: repeat(3,21%) 37%;
+}
+
+div.directory-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+}
+
+section.grid-display {
+    margin: 0;
+}
+
+section.grid-display img {
+    max-height: 5rem;
+}
+/* section.list-display h2 {
+} */
