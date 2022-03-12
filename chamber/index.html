@@ -66,7 +66,7 @@
             </div>
         </section>
         <section class='sections' id="weather">
-            <div>
+            <!-- <div>
                 <h2>Weather</h2>
                 <div id="weather-img-container">
                     <picture>
@@ -77,6 +77,19 @@
                 <h3>Partly Cloudy</h3>
                 <hr>
                 <p>Wind Speed: <span id="wind-speed">3.1</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div> -->
+            <div>
+                <h2>Weather</h2>
+                <div id="weather-img-container">
+                    <picture>
+                        <img id="weather-icon">
+                    </picture>
+                    <h3><span id="temperature"></span> F°</h3>
+                </div>
+                <h3 id="weather-description"></h3>
+                <hr>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
                 <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
         </section>
@@ -139,5 +152,6 @@
     </footer>
     <script src='./js/main.js'></script>
     <script src='./js/windchill.js'></script>
+    <!-- <script src="./js/weather.js"></script> -->
 </body>
 </html>
