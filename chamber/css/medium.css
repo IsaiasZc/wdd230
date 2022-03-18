@@ -62,7 +62,7 @@ footer div.foot2 p:not(.modify){
     padding-right: 2rem;
 }
 
-/* discover page */
+/** discover page */
 main section.galery {
     margin: 0 2rem;
 }
@@ -75,12 +75,24 @@ section.galery div {
     margin: 3rem auto;
 }
 
+.disco-pic-size {
+    min-width: 330px;
+}
+
 section.galery div.right-discover picture {
     order: 2;
 }
 
 section.galery div.right-discover p {
     order: 1;
+}
+
+.galery__div-picture-img {
+    transition: transform .5s;
+}
+
+.galery__div-picture-img:hover {
+    transform: scale(1.05);
 }
 
 /* join page  */

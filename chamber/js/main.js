@@ -83,28 +83,62 @@ window.addEventListener("scroll", () => {
 
 // Number of visits in local storage
 
-const visitsDisplay = document.getElementById("visits-display");
 
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
+// const visitsDisplay = document.getElementById("visits-display");
 
-if (numVisits !== 0 && visitsDisplay !== null ) {
-	visitsDisplay.textContent = numVisits;
-} else if(numVisits === 0 && visitsDisplay !== null) {
-	visitsDisplay.textContent = `first`;
-}
+// let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+// if (numVisits !== 0 && visitsDisplay !== null ) {
+//     visitsDisplay.textContent = numVisits;
+// } else if(numVisits === 0 && visitsDisplay !== null) {
+//     visitsDisplay.textContent = `first`;
+// }
 
 // increment the number of visits.
-numVisits++;
+// numVisits++;
 // store the new number of visits value
-localStorage.setItem("visits-ls", numVisits);
+// localStorage.setItem("visits-ls", numVisits);
 
 // closing this visits banner
+
+    
+    
+//* --------------------- Days from last visit ----------------------
+
+const visitsDisplay = document.getElementById("visits-display");
+let lastVisit =window.localStorage.getItem("last-visit");
+lastVisit = lastVisit != null ? lastVisit = new Date(lastVisit) : lastVisit;
+// if(lastVisit != null) {
+//     lastVisit = new Date(lastVisit);
+// }
+
+// console.log({lastVisit});
+
+if(lastVisit === null && visitsDisplay !== null) {
+    visitsDisplay.textContent = "This is your first visit!";
+} else if(visitsDisplay !== null){
+    let ms = date - lastVisit;
+    const msToDays = (ms) => {
+        return Math.floor(ms / 86400000)
+    };
+    visitsDisplay.textContent = `Has been pass ${msToDays(ms)} since your last visit!`;
+};
+
+lastVisit = date;
+
+// storage the last visits in localStorage
+localStorage.setItem("last-visit", lastVisit)
+
 const visitsBanner = document.querySelector("#visit-container");
 const closeVisitsBanner = document.querySelector(".close-visits-banner");
 if(closeVisitsBanner !== null){
     closeVisitsBanner.addEventListener("click", () => {
-    visitsBanner.remove()})
+        visitsBanner.remove()})
 }
+
+
+// ----------X---------- Days from last visit ----------X-----------
+
 
 //* lazy images in discover.html
 

@@ -396,6 +396,7 @@ section.galery div {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
+    margin-bottom: 1.6rem;
     align-items: center;
 }
 

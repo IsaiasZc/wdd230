@@ -110,6 +110,12 @@ footer {
     /* bottom: 0; */
 }
 
+/** --------- Discover ---------- */
+
+.disco-pic-size {
+    min-width: 400px;
+}
+
 /******************* Directory ************/
 
 div.directory-grid-container {
