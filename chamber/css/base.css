@@ -12,6 +12,7 @@
     --border-accent: #C1C1C1;
     --aqua-lower: #D4EAEC;
     --btn-active: #e2fdff;
+    --white: #FFFFFF;
 } 
 /* 
 html, body {
@@ -302,7 +303,8 @@ div#weather-img-container h3 {
 
 #weather div hr{
     padding: 0;
-    border: 1px solid #D11848;
+    border: 1px solid var(--red-accent);
+    background-color: var(--red-accent);
     margin: .2rem 1rem;
 }
 
@@ -333,16 +335,64 @@ button#join-button:hover{
 #newRelease div {
     border-top: 0.375rem solid #C5C32C;
 }
+/* 
+.spots div.spotlight {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+} */
 
-.spot1 div {
+article.spots button.spots-button {
+    margin-top: .5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+.spot1 button.spots-button {
+    border: 2px solid var(--red-accent);
+    color: var(--red-accent);
+    transition: .2s;
+}
+
+.spot1 button.spots-button:hover {
+    background-color: var(--red-accent);
+    color: var(--white);
+}
+
+.spot2 button.spots-button {
+    border: 2px solid var(--yellow-accent);
+    color: var(--yellow-accent);
+    transition: .2s;
+}
+
+.spot2 button.spots-button:hover {
+    background-color: var(--yellow-accent);
+    color: var(--white);
+}
+
+.spot3 button.spots-button {
+    border: 2px solid var(--aqua-accent);
+    color: var(--aqua-accent);
+    transition: .2s;
+}
+
+.spot3 button.spots-button:hover {
+    background-color: var(--aqua-accent);
+    color: var(--white);
+}
+
+
+
+.spot1 div:first-child {
     border-top: .375rem solid #D11848;
 }
 
-.spot2 div {
+.spot2 div:first-child {
     border-top: .375rem solid #f4b42a;
 }
 
-.spot3 div {
+.spot3 div:first-child {
     border-top: 0.375rem solid #1E9DA4;
 }
 
@@ -380,6 +430,10 @@ footer hr{
 footer div.foot1-2 p a{
     color: black;
     text-decoration: none;
+}
+
+p.weather-reference {
+    margin: 1.5rem 0 2rem;
 }
 
 /* discover page  */
@@ -451,7 +505,7 @@ button.close-visits-banner {
 }
 
 
-/*-------- Join Page  ----------*/
+/**-------- Join Page  ----------*/
 
 /* form#join-form {
     margin-bottom: 3rem;
@@ -480,9 +534,18 @@ form#join-form label, form#join-form div {
     margin-top: .2rem;
 }
 
+#join-form label.join_form__label textarea:focus {
+    border-color: var(--aqua-accent);
+    box-shadow: 0 0 3px var(--aqua-accent);
+    outline: 0 none;
+}
+
 #join-form label.join_form__member-label {
     margin: .5rem;
 }
+
+
+
 
 #join-form label.join_form__member-label input::after {
     color: var(--aqua-accent);
@@ -500,6 +563,23 @@ form#join-form label, form#join-form div {
     padding: .7rem 2.2rem;
     transition: .2s;
     max-height: 2.6rem;
+}
+
+#join-form label.join_form__label input:required{
+    border:1px solid var(--invalid);
+    box-shadow: 0 0 3px var(--invalid);
+}
+
+#join-form label.join_form__label input:valid{
+    border:1px solid var(--aqua-accent);
+    box-shadow: none;
+}
+
+#join-form label.join_form__label input:focus{
+    border-color: var(--aqua-accent);
+    box-shadow: 0 0 3px var(--aqua-accent);
+    /* box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,144,0,0.6); */
+    outline: 0 none;
 }
 
 #join-form input[type="submit"]:hover {
