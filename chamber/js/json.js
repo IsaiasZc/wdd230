@@ -1,5 +1,6 @@
 const requestURL = "./data/data.json";
 const cards = document.querySelector(".directory-cards");
+const spots = document.querySelectorAll(".spots");
 
 fetch(requestURL)
 .then((response) =>{
@@ -8,7 +9,45 @@ fetch(requestURL)
 .then((jsonObject) => {
     // console.log(jsonObject);
     const business = jsonObject;
-    business.forEach(displayBusinnes);
+    if(cards != null) {
+        business.forEach(displayBusinnes);
+    }
+
+    if(spots != null) {
+        let newSpots = business.filter(element => element.status == "gold");
+        spots.forEach((element) => {
+            // pick a random business
+            let spot = newSpots.pop(Math.floor(Math.random() * newSpots.length));
+            console.log(spot);
+
+            // create the elements for the spot
+            let div = document.createElement('div');
+            let h2 = document.createElement('h2');
+            let img = document.createElement('img');
+            let phone = document.createElement('p');
+            let address = document.createElement('p');
+
+            //set the title
+            h2.textContent = spot.businessName;
+
+            // build the image
+            img.classList.add("spot-img");
+            img.setAttribute('src',spot.logo);
+            img.setAttribute('alt', `logo of ${spot.businessName}`);
+            img.setAttribute('loading','lazy');
+
+            // set the descripcion phone and adress
+            phone.textContent = spot.phone;
+            address.textContent = spot.address;
+
+            div.appendChild(h2);
+            div.appendChild(img);
+            div.appendChild(phone);
+            div.appendChild(address);
+            element.appendChild(div);
+        })
+    }
+    
 }).then(changeView)
 
 // distribute the view by its size whn it changes
@@ -96,17 +135,19 @@ function gridView(element) {
 const gridViewButton = document.getElementById('grid-view');
 const listViewButton = document.getElementById('list-view');
 
-gridViewButton.addEventListener('click',() => {
-    const sections = document.querySelectorAll(".views");
-    sections.forEach(element => {
-        gridView(element)
-    })
+if(cards != null) {
+    gridViewButton.addEventListener('click',() => {
+        const sections = document.querySelectorAll(".views");
+        sections.forEach(element => {
+            gridView(element)
+        })
+        
+    });
     
-});
-
-listViewButton.addEventListener('click',() => {
-    const sections = document.querySelectorAll(".views");
-    sections.forEach(element => {
-        listView(element)
-    })
-});
+    listViewButton.addEventListener('click',() => {
+        const sections = document.querySelectorAll(".views");
+        sections.forEach(element => {
+            listView(element)
+        })
+    });
+}

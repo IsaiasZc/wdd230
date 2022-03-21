@@ -3,7 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Chamber Commerce | Directory</title>
+        <title>Chamber Commerce | Discover</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='./css/base.css'>
         <link rel="stylesheet" href="./css/medium.css" media='screen and (min-width:40rem)'>
@@ -42,14 +42,48 @@
         </nav>
         <div id='current-time-container'><span id='currentTime'></span></div>
     </header>
+    <!-------------- main ------------------->
     <main>
-        <h2 class="directory-title">Business Directory</h2>
-        <div class="directory-buttons">
-            <button id="grid-view"><img src="./icons/grid-button.png" alt="grid-icon"></button>
-            <button id="list-view"><img src="./icons/list-button.png" alt="list-icon"></button>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-info-detail">
+                    <div>
+                    <h2>Contact Us</h2>
+                    <h3>Greatest Chamber of Commerce</h3>
+                    <p>#458 Av. Aviación Lima, Peru</p>
+                    <br>
+                    <p>+(51) 999-999-9999</p>
+                    </div>
+                </div>
+                <div class="contact-img">
+                    <img src="./images/chamber.jpg" alt="Camara de Comercio">
+                </div>
+            </div>
         </div>
-        <div class="directory-cards"></div>
+        <div class="get-in-touch">
+            <h2>Get in Touch</h2>
+        </div>
+        <form id="contact-form" method="get" action="thankyou.html">
+            <fieldset class="contact-fieldset-1">
+                <label class="contact_form__label">First Name<span>*</span> <input class="input-text" type="text" name="fname" autofocus required></label>
+                <label class="contact_form__label">Last Name<span>*</span> <input class="input-text" type="text" name="lname" required></label>
+                <label class="contact_form__label">Email<span>*</span> <input class="input-text" type="email" name="email" placeholder="test@yahoo.com" required></label>
+                <label class="contact_form__label">Business Name<span>*</span> <input class="input-text" type="text" name="business" required></label>    
+            </fieldset>
+            <fieldset class="contact-fieldset-2">
+                <label>Are you a Chamber Member?</label>
+                <label class="contact_form__member-label"><input class="input-radio" type="radio" name="membership" value="npmember"> Yes</label>
+                <label class="contact_form__member-label"><input class="input-radio" type="radio" name="membership" value="bronzemember"> No</label>
+                <label class="contact_form__member-label"><input class="input-radio" type="radio" name="membership" value="silvermember"> Not sure</label>
+            </fieldset>
+            <fieldset class="contact-fieldset-3">
+                <!-- <label>What questions do you have for the Greatest Chamber?</label> -->
+                <label class="contact_form__label">Business Description <textarea class="text-area" name="business-desc"cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input class="input-submit" type="submit" value="Contact Us">
+        </form>
     </main>
+    <!-----X--------- main --------X---------->
     <footer>
         <div class="foot1">
             <div class="foot1-1">
@@ -64,7 +98,7 @@
                 <p>+(51) 999-999-9999</p>
                 <p><a href="https://www.google.com.pe/maps/place/C%C3%A1mara+de+Comercio+Lima+-+Sede+Santa+Anita/@-12.056362,-76.9755623,17z/data=!3m1!4b1!4m5!3m4!1s0x9105c6665dcecbf3:0xd568c1e91a600857!8m2!3d-12.0563673!4d-76.9733736?hl=es-419" target="_blank">🚩 Location Map</a></p>
             </div>
-            
+
         </div>
         <hr>
         <div class="foot2">
@@ -75,6 +109,5 @@
         </div>
     </footer>
     <script src='./js/main.js'></script>
-    <script src="./js/json.js"></script>
 </body>
 </html>
