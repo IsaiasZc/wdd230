@@ -1,0 +1,81 @@
+
+:root {
+    /* Theme Colors */
+    --white: #FFFFFF;
+    --dark-grey: #3A3B3C;
+    --accent-grey: #B4B3B3;
+}
+
+.nav-brand {
+    display: none;
+}
+
+.nav-brand-li {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-menu {
+    background-color:  rgba(0, 0, 0, 0.33);
+    padding: 0;
+}
+
+.nav-ul-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu .nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.6rem 0;
+    width: 90vw;
+}
+
+.nav-menu .nav-options .nav-link{
+    padding-bottom: 0;
+}
+
+#hambButton {
+    display: none;
+}
+
+/*---------- Footer ------------*/
+
+div.footer-container { 
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    row-gap: 6rem ;
+    grid-template-areas: 
+    "a b c"
+    "d d e"
+    ;
+}
+
+.footer-div {
+    border: none;
+}
+
+.footer-div.footer-about-us {
+    border-left: 1px solid var(--accent-grey);
+    margin: 2rem 0;
+    padding: 0 0 0 2rem;
+}
+
+.footer-div.footer-about-us h2 {
+    margin-top: 0;
+}
+
+.footer-div.footer-about-us p {
+    margin-bottom: 0;
+}
+
+.footer-div.copy {
+    grid-area: d;
+}
+
+.social-media {
+    align-items: center;
+}
