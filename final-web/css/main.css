@@ -4,6 +4,7 @@
     --white: #FFFFFF;
     --dark-grey: #3A3B3C;
     --accent-grey: #B4B3B3;
+    --orange: #ff9a00;
 }
 
 /*TODO ---------GLobal Classes ----------*/
@@ -20,9 +21,14 @@ a {
     font-family: 'Raleway', sans-serif;
 }
 
-h2, button {
+h2,h3, button {
     font-family: 'Fira Sans', sans-serif !important;
     font-weight: 400;
+}
+
+p {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
 }
 
 .flex-row {
@@ -48,10 +54,19 @@ h1 {
     margin: auto;
 }
 
-.img-cover {
+img {
+    width: 100%;
+}
+
+.img-cover-all {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.img-cover {
+    object-fit: cover;
+    width: 100%;
 }
 /*TODO ----X----GLobal Classes -----X----*/
 
@@ -169,6 +184,155 @@ h1 {
 #hambButton.nav-active span:nth-child(2){ display: block;} 
 
 /*-------------- Main Home Page --------------*/
+
+.slider-container, .slider-temples-container{
+    margin: 2.3rem 0;
+    position: relative;
+    max-width: 1000px;  
+    width: 100%;
+    overflow: hidden;
+}
+
+div.slider-description,.slider-temples-description {
+    text-align: center;
+    padding: 0 1.2rem;
+
+}
+
+.slider-card-img {
+    width: 100%;
+}
+
+.slider-card-info {
+    padding: 1rem 1.5rem;
+}
+
+.slider-cards {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.slider-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+/*TODO translate the sliders */
+.slider-cards.slider-active-1 {
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+
+.slider-cards.slider-active-2 {
+    animation: none;
+    transform: translate3d(calc(-100% * 1),0,0);
+}
+
+.slider-cards.slider-active-3 {
+    animation: none;
+    transform: translate3d(calc(-100% * 2),0,0);
+}
+
+.slider-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slider-options button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-grey);
+    opacity: .8;
+    margin: 0 .7rem;
+    transition: .2s;
+}
+
+.slider-options button:hover {
+    opacity: 1;
+}
+
+.slider-temples-description {
+    margin: 5rem auto 3rem;
+}
+
+
+/* Weather cards */
+
+.weather-container {
+    background-color: var(--orange);
+    border-radius: 15px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.weather-current h3 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.weather-current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    border-bottom: 2px solid var(--dark-grey);
+}
+
+.weather-current-img {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c c";
+    width: 100%;
+    align-items: center;
+}
+
+.weather-current-img h3 {
+    grid-area: b;
+    justify-self: center;
+}
+
+.weather-current-img img {
+    max-width: 100px;
+    grid-area: a;
+    justify-self: center;
+}
+
+.weather-next {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.weather-next div {
+    margin: 1.5rem 0;
+}
+
+.weather-next div:nth-child(2) {
+    border-left: 2px solid var(--dark-grey);
+    border-right: 2px solid var(--dark-grey);
+}
+
+.weather-next img {
+    max-width: 80px;
+}
+.weather-next h3 {
+    margin: 0 0 1rem;
+}
 
 /*--------------- Footer  --------------*/
 

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/large.css" media='screen and (min-width:64rem)'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Goudy+Bookletter+1911&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Goudy+Bookletter+1911&family=Cormorant+Garamond:wght@300&family=Raleway&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -20,7 +20,7 @@
         <nav class="nav">
             <div class="nav-menu flex-column">
                 <div class="nav-back absolute">
-                    <img class="img-cover" src="./images/saad-khan-425b2PhNuHA-unsplash.jpg" alt="background">
+                    <img class="img-cover-all" src="./images/saad-khan-425b2PhNuHA-unsplash.jpg" alt="background">
                 </div>
                 <div class="nav-img-filter absolute"></div>
                 <div class="nav-brand absolute">
@@ -43,7 +43,107 @@
         </div>
     </header>
     <main>
-
+        <div class="slider-container">
+            <div class="slider-description">
+                <h2>Temple Inn & Suites</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi. Delectus in maxime, magni odio sequi voluptatem quaerat voluptatibus porro, vero quibusdam ipsum consectetur, incidunt a! Error hic nam quasi, veritatis necessitatibus nostrum provident ipsa, corporis obcaecati quibusdam facilis.</p>
+            </div>
+            <div class="slider-cards slider-active-1" id="activities-slider">
+                <div class="slider-card">
+                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/500/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-info">
+                        <h3>Activity Name</h3>
+                        <p>1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
+                        <a href="#"><h3>Reserve with us &#x23f5;</h3></a>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/501/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-info">
+                        <h3>Activity Name</h3>
+                        <p>2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
+                        <a href="#"><h3>Reserve with us &#x23f5;</h3></a>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/502/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-info">
+                        <h3>Activity Name</h3>
+                        <p>3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
+                        <a href="#"><h3>Reserve with us &#x23f5;</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-options">
+                <button id="activity-before">&#x23f4;</button>
+                <p><span id="activity-active">1</span>/3</p>
+                <button id="activity-next">&#x23f5;</button>
+            </div>
+        </div>
+        <div class="slider-temples-container">
+            <div class="slider-temples-description">
+                <h2>Close to the Temples you want yo visit</h2>
+            </div>
+            <div class="slider-cards slider-active-1" id="temples-slider">
+                <div class="slider-card">
+                    <div class="slider-card-img">
+                        <img class="img-cover-all" src="https://picsum.photos/502/500" alt="">
+                    </div>
+                    <div class="slider-card-info">
+                        <h3>Temple Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <a href="#"><h3>Visit the Temple &#x23f5;</h3></a>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card-img">
+                        <img class="img-cover-all" src="https://picsum.photos/501/500" alt="">
+                    </div>
+                    <div class="slider-card-info">
+                        <h3>Temple Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <a href="#"><h3>Visit the Temple &#x23f5;</h3></a>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="slider-card-img">
+                        <img class="img-cover-all" src="https://picsum.photos/500/500" alt="">
+                    </div>
+                    <div class="slider-card-info">
+                        <h3>Temple Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <a href="#"><h3>Visit the Temple &#x23f5;</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-options">
+                <button id="slider-temple-before">&#x23f4;</button>
+                <p><span id="slider-temple-active">1</span>/3</p>
+                <button id="slider-temple-next">&#x23f5;</button>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="weather-current">
+                <div class="weather-current-img">
+                    <h3><span id="weather-current-temperature"></span> F°</h3>
+                </div>
+                <div class="weather-current-info">
+                    <h3><span id="weather-current-description"></span></h3>
+                    <h3>Humidity: <span id="weather-current-humidity"></span></h3>
+                </div>
+            </div>
+            <div class="weather-next">
+                <div class="weather-next-1">
+    
+                </div>
+                <div class="weather-next-2">
+    
+                </div>
+                <div class="weather-next-3">
+    
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -88,5 +188,6 @@
       
 
     <script src="./js/main.js"></script>
+    <script src="./js/weather.js"></script>
 </body>
 </html>
