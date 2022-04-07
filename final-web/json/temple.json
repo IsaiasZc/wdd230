@@ -22,7 +22,7 @@
             "Friday, 23 December 2022 - Saturday, 24 December 2022",
             "Saturday, 31 December 2022"
         ],
-        "imgUrl" : "../images/temples/bountiful_temple_lds.jpeg"
+        "imgUrl" : "./images/temples/bountiful_temple_lds.jpeg"
 
     },
     {
@@ -45,7 +45,7 @@
             "Saturday, 24 December 2022",
             "Saturday, 31 December 2022"
         ],
-        "imgUrl" : "../images/temples/los_angeles_temple_lds.jpg"
+        "imgUrl" : "./images/temples/los_angeles_temple_lds.jpg"
     },
     {
         "name" : "Seattle Washington Temple",
@@ -68,7 +68,7 @@
             "Saturday, 24 December 2022 - Sunday, 25 December 2022",
             "Saturday, 31 December 2022 - Sunday, 1 January 2023"
         ],
-        "imgUrl" : "../images/temples/seattle_washington_temple_exterior.jpeg"
+        "imgUrl" : "./images/temples/seattle_washington_temple_exterior.jpeg"
     },
     {
         "name" : "Idaho Falls Idaho Temple",
@@ -91,6 +91,6 @@
             "Saturday, 24 December 2022",
             "Saturday, 31 December 2022"  
         ],
-        "imgUrl" : "../images/temples/idaho_falls_idaho_temple.png"
+        "imgUrl" : "./images/temples/idaho_falls_idaho_temple.png"
     }
 ]
