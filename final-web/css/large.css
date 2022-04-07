@@ -135,25 +135,38 @@ div.footer-container {
 
 .temple-card-header,.card {
     display: flex;
-    max-height: 450px;
+    flex-direction: row;
+    height: 450px;
 }
 
-.temple-card:nth-child(even) .temple-card-img img, .card:nth-child(odd) .card-img img {
+.card-img {
+    border-radius: 10px;
+}
+
+.temple-card:nth-child(even) .temple-card-img img, .card:nth-child(odd) .card-img {
     border-radius: 10px 0 0 10px;
 }
 
-.temple-card:nth-child(odd) .temple-card-img img,.card:nth-child(even) .card-img img {
+.temple-card:nth-child(odd) .temple-card-img img,.card:nth-child(even) .card-img {
     border-radius: 0 10px 10px 0;
 }
 
-.temple-card:nth-child(odd) .temple-card-header-description, .card:nth-child(odd) .card-content {
+.temple-card:nth-child(odd) .temple-card-header-description, .card:nth-child(odd) .card-img {
     order: 1;
 }
 
-.temple-card:nth-child(odd) .temple-card-img, .card:nth-child(odd) .card-img {
+.card:nth-child(even) .card-img {
     order: 2;
 }
 
+.card:nth-child(even) .card-content {
+    order: 1;
+}
+
+
+.temple-card:nth-child(odd) .temple-card-img,.card:nth-child(odd) .card-content {
+    order: 2;
+}
 
 .temple-card-header-description, .card-content {
     width: 35vw;
@@ -182,4 +195,42 @@ fieldset.reserve-info-1 {
 .reservation_form_label.dates {
     padding: 0;
 }
+
+.reception-content-container,.missionary-temple-content-container {
+    display: grid;
+    grid-template-areas: 
+    "a a"
+    "b b";
+}
+
+.reception-galery,.missionary-temple-galery {
+    grid-area: a;
+    height: 450px;
+}
+
+.reception-description,.missionary-temple-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+}
+
+.reception-description-1, .reception-description-2,.missionary-temple-description-1,.missionary-temple-description-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reception-description-1 .card-img,.reception-description-2 .card-img,.missionary-temple-description-1 .card-img{
+    order: 1 !important;
+}
+
+.reception-description-2 .card-img {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.reception-description-1 .card-content,.reception-description-2 .card-content, .missionary-temple-description-1 .card-content{
+    order: 2 !important;
+    width: 100%;
+}
+
+
 /*------X--------- Reservation page  ------X--------*/

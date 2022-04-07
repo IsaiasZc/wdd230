@@ -72,6 +72,10 @@ img {
     object-fit: cover;
     width: 100%;
 }
+
+.h450 {
+    height: 450px;
+}
 /*TODO ----X----GLobal Classes -----X----*/
 
 .header-container {
@@ -567,11 +571,16 @@ div.footer-container {
     width: 100%;
 }
 
+.card-img {
+    margin: 0;
+    height: 100%;
+}
+
 .temple-card-img picture,.card-img picture {
     width: 100%;
 }
 
-.temple-card-img img, .card-img img {
+.temple-card-img img, .card-img {
     border-radius: 10px 10px 0 0;
 }
 
@@ -724,3 +733,12 @@ input:valid ~ .invalid {
 .card-slide-img {
     height: 100%;
 }
+
+.card .card-content {
+    order: 2;
+}
+
+.card .card-img {
+    order: 1;
+}
+
