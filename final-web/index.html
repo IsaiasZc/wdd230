@@ -51,23 +51,33 @@
         <div class="slider-container">
             <div class="slider-description">
                 <h2>Temple Inn & Suites</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi. Delectus in maxime, magni odio sequi voluptatem quaerat voluptatibus porro, vero quibusdam ipsum consectetur, incidunt a! Error hic nam quasi, veritatis necessitatibus nostrum provident ipsa, corporis obcaecati quibusdam facilis.</p>
+                <p>Bringing people together is what we've done since opening our first Temple Inn & Suites in 2003. Now we're deeply rooted in over 400 communities across the globe. We are proud to act as a point of connection for thousands of Church members, many just like you. Welcome.</p>
             </div>
             <div class="slider-cards slider-active-1" id="activities-slider">
                 <div class="slider-card">
-                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/500/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-img">
+                        <picture>
+                            <source media="(min-width: 64rem)" srcset="./images/activities/family-search-lar.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/activities/family-search-med.jpg">
+                            <img class="img-cover-all" src="./images/activities/family-search-main.jpg" alt="family-search-center">
+                        </picture>
+                    </div>
                     <div class="slider-card-info">
-                        <h3>Activity Name</h3>
-                        <p>1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
-                        <a href="./reservation.html"><h3>Reserve with us &#x23f5;</h3></a>
+                        <h3>Family Search Center</h3>
+                        <p>A family search center that supports family search and ordinance work where you could find the necessary to work in your family tree.</p>
+                        <a href="./reservation.html"><h3>Index with Us &#x23f5;</h3></a>
                     </div>
                 </div>
                 <div class="slider-card">
-                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/501/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-img"><picture>
+                        <source media="(min-width: 64rem)" srcset="./images/activities/gym-lar.jpg">
+                        <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset=".images/activities/gym-med.jpg">
+                        <img class="img-cover-all" src="./images/activities/gym-main.jpg" alt="Hotel Gym">
+                    </picture></div>
                     <div class="slider-card-info">
-                        <h3>Activity Name</h3>
-                        <p>2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
-                        <a href="./reservation.html"><h3>Reserve with us &#x23f5;</h3></a>
+                        <h3>Fully Equiped Gym</h3>
+                        <p>Fully equipped gym The fully equipped fitness centre has a comprehensive exercise area including Star Trac cardiovascular machines, weight stations, and more.</p>
+                        <a href="./reservation.html"><h3>Train with Us &#x23f5;</h3></a>
                     </div>
                 </div>
                 <div class="slider-card">
@@ -92,7 +102,9 @@
             <div class="slider-cards slider-active-1" id="temples-slider">
                 <div class="slider-card">
                     <div class="slider-card-img">
-                        <img class="img-cover-all" src="https://picsum.photos/502/500" alt="">
+                        <picture>
+                            <img class="img-cover-all" src="./images/activities/family-search-main.jpg" alt="">
+                        </picture>
                     </div>
                     <div class="slider-card-info">
                         <h3>Temple Name</h3>
@@ -191,6 +203,7 @@
             <div class="footer-div copy">
                 <p>Temple Inn & Suites</p>
                 <p>&copy;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius ducimus voluptatem adipisci. Repellat, deserunt!</p>
+                <p>Last Modificaton: <span id="lastTime"></span></p>
             </div>
             <div class="social-media">
                 <div class="twitter">
