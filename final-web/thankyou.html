@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/medium.css" media='screen and (min-width:40rem)'>
+    <link rel="stylesheet" href="./css/large.css" media='screen and (min-width:64rem)'>
+    <link rel="icon" href="./images/Logo/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Goudy+Bookletter+1911&family=Cormorant+Garamond:wght@300&family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="weather-alert alert-close">
+            <span id="weather-message"></span>
+            <button id="close-alert">&#10006;</button>
+        </div>
+        <nav class="nav">
+            <div class="nav-menu flex-column">
+                <div class="nav-back absolute">
+                    <img class="img-cover-all" src="./images/saad-khan-425b2PhNuHA-unsplash.jpg" alt="background">
+                </div>
+                <div class="nav-img-filter absolute"></div>
+                <div class="nav-brand absolute">
+                    <h1>Temple Inn & Suites</h1>
+                </div>
+                <button id="hambButton"><span>&#9776;</span><span>&#10006;</span></button>
+                <div class="nav-ul-container">
+                    <ul class="nav-options flex-column">
+                        <li class="nav-link " ><a href="./">Home</a></li>
+                        <li class="nav-link"><a href="./temple.html">Temples</a></li>
+                        <li class="nav-link nav-brand-li">Temple Inn & Suites</li>
+                        <li class="nav-link"><a href="./reservation.html">Reservation</a></li>
+                        <li class="nav-link"><a href="./services.html">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-register-container">
+            <a href="./reservation.html"><button class="register-btn">Reserve Now</button></a>
+        </div>
+    </header>
+    <main>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-div footer-menu">
+                <ul>
+                    <li class="foot-link"><a href="./">Home</a></li>
+                    <li class="foot-link"><a href="./temple.html">Temples</a></li>
+                    <li class="foot-link"><a href="./reservation.html">Reservation</a></li>
+                    <li class="foot-link"><a href="./services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-div footer-contact">
+                <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                <p>+51 999 999 999</p>
+                <p>info@thisisatest.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028553!2d-77.09772048438202!3d38.98325594948326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1649132250784!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <div class="foot-register-container">
+                    <a href="./reservation.html"><button class="register-btn">Reserve Now</button></a>
+                </div> -->
+            </div>
+            <div class="footer-div footer-about-us">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo vitae eveniet aut dignissimos illum! Cupiditate vel in sed quia nemo, omnis mollitia quod error inventore! Eos corrupti culpa quas sint assumenda aliquid eum suscipit, soluta minima voluptatibus repellat quae ipsa illo aspernatur tempora, deserunt officiis dolorum? Repudiandae error doloribus, enim sequi optio quibusdam delectus necessitatibus saepe ea officia dolorum tempora quis voluptates at omnis aspernatur molestiae accusamus </p>
+            </div>
+            <div class="footer-div footer-form">
+                <h3>Get in Touch</h3>
+                <form id="footer-form" method="get" action="thankyou.html">
+                    <fieldset class="footer-fieldset">
+                        <label class="footer-fieldset__label"><input type="text" class="footer-input-text" name="fname" placeholder="First Name*" required></label>
+                        <label class="footer-fieldset__label"><input type="text" class="footer-input-text" name="lname" placeholder="Last Name*" required></label>
+                        <label class="footer-fieldset__label"><input type="text" class="footer-input-text" placeholder="Phone Number*" name="phoneNumber"></label>
+                        <label class="footer-fieldset__label"><input type="email" class="footer-input-text" placeholder="Email*" name="email"></label>
+                    </fieldset>
+                    <div class="footer-form-submit">
+                        <input type="submit" class="footer-form-submit-btn register-btn" value="Call me">
+                    </div>
+                </form>
+            </div>
+            <div class="footer-div copy">
+                <p>Temple Inn & Suites</p>
+                <p>&copy;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius ducimus voluptatem adipisci. Repellat, deserunt!</p>
+            </div>
+            <div class="social-media">
+                <div class="twitter">
+                    <a href="https://twitter.com/" target="_blank"><img src="./images/icons/twitter.png" alt="twitter icon"></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="./images/icons/facebook.png" alt="facebook icon"></a>
+                </div>
+                <div class="instragam">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/icons/instagram.png" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+
+    <script src="./js/main.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>

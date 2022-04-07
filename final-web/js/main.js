@@ -25,13 +25,15 @@ const templesCards = document.getElementById('temples-slider');
 const templesActive = document.getElementById('slider-temple-active');
 const templesNext = document.getElementById('slider-temple-next');
 const templesBefore = document.getElementById('slider-temple-before');
-
 // buttons
-activityNext.addEventListener("click", () => changeCard(activityCards,activityActive,1));
-activityBefore.addEventListener("click", () => changeCard(activityCards,activityActive,-1))
 
-templesNext.addEventListener("click", () => changeCard(templesCards,templesActive,1));
-activityBefore.addEventListener("click", () => changeCard(templesCards,templesActive,-1))
+if(templesCards != null || activityCards != null){
+    activityNext.addEventListener("click", () => changeCard(activityCards,activityActive,1));
+    activityBefore.addEventListener("click", () => changeCard(activityCards,activityActive,-1))
+
+    templesNext.addEventListener("click", () => changeCard(templesCards,templesActive,1));
+    templesBefore.addEventListener("click", () => changeCard(templesCards,templesActive,-1))
+}
 
 function changeCard(cardsList,activeNumber,move) {
     // Change between cards based on the button clicked
@@ -47,4 +49,57 @@ function changeCard(cardsList,activeNumber,move) {
     // activityCards[activityCounter].classList.add('activity-active');
     cardsList.classList.add(`slider-active-${counter}`);
     activeNumber.textContent = `${counter}`;
+}
+
+// reservation rooms counter counter
+
+const roomsCounter = document.getElementById('rooms-counter');
+
+const buttonAdd = document.querySelector('.rooms-counter-add');
+const buttonSubt = document.querySelector('.rooms-counter-subt');
+
+if(roomsCounter != null) {
+    roomsCounter.value = 1;
+    buttonAdd.addEventListener('click',() => {
+        if(parseInt(roomsCounter.value) < 9) {
+            roomsCounter.value++ // = parseInt(roomsCounter.value) + 1;
+            // console.log(roomsCounter.value);
+        }
+    })
+
+    buttonSubt.addEventListener('click',() => {
+        if(parseInt(roomsCounter.value) > 1) {
+            roomsCounter.value-- // = parseInt(roomsCounter.value) + 1;
+            // console.log(roomsCounter.value);
+        }
+    })
+}
+
+// reservation buttons for the galery
+const reserveCards = document.getElementById('reservation-slider');
+const reserveActive = document.getElementById('reservation-galery-active');
+const reserveNext = document.getElementById('reservation-galery-next');
+const reserveBefore = document.getElementById('reservation-galery-before');
+
+if(reserveCards != null){
+    reserveNext.addEventListener("click", () => changeCard(reserveCards,reserveActive,1));
+    reserveBefore.addEventListener("click", () => changeCard(reserveCards,reserveActive,-1))
+}
+
+//function to valide the reservation form
+
+function validateForm() {
+    document.querySelector(".invalid-name").innerHTML = "write your full name*";
+    document.querySelector(".invalid-email").innerHTML = "write a valid email*";
+    document.querySelector(".invalid-phone").innerHTML = "write a valid phone*";
+    document.querySelector(".invalid-date").innerHTML = "Pick an start and end dates";
+    document.querySelector(".invalid-location").innerHTML = "Choose a location*";
+    document.querySelector(".invalid-room").innerHTML = "Choose a room*";
+//     if(document.form.fname.value.length==0) {
+//         console.log(document.querySelector(".testing"))
+//         document.querySelector(".testing").innerHTML = "Write your full name";
+//         // alert("Tiene que escribir su nombre");
+//         // document.form.fname.focus();
+//     }
+//     alert("Aqui");
 }

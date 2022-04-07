@@ -12,7 +12,7 @@ geoLocation.getCurrentPosition((position) => {
             // Create the elements for the current weather
             let img = document.createElement('img');
             let imgContainer = document.querySelector(".weather-current-img");
-            console.log(document.querySelector(".weather-current-img"));
+            // console.log(document.querySelector(".weather-current-img"));
             let currentTemp = document.getElementById("weather-current-temperature");
             let currentDescri = document.getElementById("weather-current-description");
             let currentHum = document.getElementById("weather-current-humidity");
@@ -35,17 +35,16 @@ geoLocation.getCurrentPosition((position) => {
 
             // get the weather for next 3 days
             
-            for(i=0; i<3; i++) {
+            for(i=1; i<4; i++) {
                 // Call the container
-                let weatherNext = document.querySelector(`.weather-next-${i + 1}`)
+                let weatherNext = document.querySelector(`.weather-next-${i}`)
 
                 // Calculate the date
                 let forecastDay = new Date(jsonObject.daily[i].dt * 1000);
-                console.log(forecastDay);
 
                 // Store the date in a variable
                 let forecastDate = document.createElement("h3");
-                forecastDate.textContent = forecastDay.getDate() + "/" + forecastDay.getMonth() + "/" +forecastDay.getFullYear();
+                forecastDate.textContent = forecastDay.getDate() + "/" + (forecastDay.getMonth() + 1) + "/" +forecastDay.getFullYear();
 
                 // create the img
                 let forecastImg = document.createElement('img');
@@ -62,6 +61,31 @@ geoLocation.getCurrentPosition((position) => {
                 weatherNext.append(forecastTemp);
 
             }
+            
+            //* Create the Alerts
+            // let jsontest = "./test-json";  
+            if (jsonObject.alerts != undefined) {
+                let alertContainer = document.querySelector(".weather-alert");
+                let alertMessage = document.querySelector("#weather-message");
+                let closeButton = document.querySelector("#close-alert");
+
+                //make the alert visible
+                alertMessage.classList.remove("alert-close");
+
+                // configure the message
+                let message = jsonObject.alerts[0].description;
+                alertMessage.innerHTML = "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible.";
+
+                //make the button closeable
+                closeButton.addEventListener("click", () => {
+                    // make the alert invisible
+                    alertContainer.classList.add("alert-close");
+                })
+                
+            }
+            console.log(jsonObject.alerts);
 
         })
 });
+
+

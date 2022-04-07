@@ -1,0 +1,96 @@
+[
+    {
+        "name" : "Bountiful Utah Temple",
+        "address" : "640 S Bountiful Blvd Bountiful UT 84010-1394 United States",
+        "phone" : "(1) 801-296-2100",
+        "email" : "Not available",
+        "services" : [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : "The Bountiful Utah Temple was the eighth temple built in Utah and the first built in Davis County. The floor plan created for the Bountiful Utah Temple was adapted and used for the Mount Timpanogos Utah Temple. <br>The Bountiful Utah Temple is one of only two temples dedicated by President Howard W. Hunter during his brief time as president of the Church. ",
+        "ordinance_schedule" : "temple is closed currently",
+        "session_schedule" : "temple is closed currently",
+        "temple_closure_schedule" : [
+            "Monday, 4 April 2022 - Monday, 18 April 2022",
+            "Saturday, 2 July 2022",
+            "Saturday, 23 July 2022",
+            "Monday, 19 September 2022 - Monday, 3 October 2022",
+            "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+            "Friday, 23 December 2022 - Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "imgUrl" : "../images/temples/bountiful_temple_lds.jpeg"
+
+    },
+    {
+        "name" : "Los Angeles California Temple",
+        "address" : "10777 Santa Monica Blvd Los Angeles CA 90025-4718 United States",
+        "phone" : "(1) 310-474-5569",
+        "email" : "Not available",
+        "services" : [ "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : "The Los Angeles Temple was dedicated on March 11, 1956. The temple is now named the Los Angeles California Temple. <br>Expansions since 1955 of the Salt Lake Temple moved the “largest shrine” title back to Utah.",
+        "ordinance_schedule" : "temple is closed currently",
+        "session_schedule" : "temple is closed currently",
+        "temple_closure_schedule" : [
+            "Monday, 11 July 2022 - Monday, 1 August 2022",
+            "Saturday, 1 October 2022",
+            "Tuesday, 22 November 2022 - Thursday, 24 November 2022",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"
+        ],
+        "imgUrl" : "../images/temples/los_angeles_temple_lds.jpg"
+    },
+    {
+        "name" : "Seattle Washington Temple",
+        "address" : "2808 148th Ave SE Bellevue WA 98007-6453 United States",
+        "phone" : "(1) 425-643-5144",
+        "email" : "Not available",
+        "services" : ["Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : "Plans to construct the temple were announced 15 November 1975, Church leaders broke ground 27 May 1978, and Spencer W. Kimball, president of The Church of Jesus Christ of Latter-day Saints from 1973 to 1985, dedicated the Seattle Washington Temple 17 November 1980. The temple serves Latter-day Saints in western Washington.",
+        "ordinance_schedule" : "temple is closed currently",
+        "session_schedule" : "temple is closed currently",
+        "temple_closure_schedule" : [
+            "Monday, 4 July 2022",
+            "Monday, 8 August 2022 - Monday, 22 August 2022",
+            "Saturday, 1 October 2022",
+            "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+            "Saturday, 24 December 2022 - Sunday, 25 December 2022",
+            "Saturday, 31 December 2022 - Sunday, 1 January 2023"
+        ],
+        "imgUrl" : "../images/temples/seattle_washington_temple_exterior.jpeg"
+    },
+    {
+        "name" : "Idaho Falls Idaho Temple",
+        "address" : "1000 Memorial Dr Idaho Falls ID 83402-3410 United States",
+        "phone" : "(1) 208-522-7669",
+        "email" : "Not available",
+        "services" : ["Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : "The Idaho Falls Idaho Temple was the first temple built in Idaho and is located on the picturesque banks of the Snake River on 1000 Memorial Drive. President George Albert Smith announced plans to build the temple on March 3, 1937, and it was dedicated on September 23, 1945. The temple closed March 2015 for interior renovations.",
+        "ordinance_schedule" : "temple is closed currently",
+        "session_schedule" : "temple is closed currently",
+        "temple_closure_schedule" : [
+            "Tuesday, 28 June 2022 - Monday, 11 July 2022",
+            "Saturday, 1 October 2022",
+            "Wednesday, 23 November 2022 (Limited Operations)",
+            "Thursday, 24 November 2022",
+            "Saturday, 24 December 2022",
+            "Saturday, 31 December 2022"  
+        ],
+        "imgUrl" : "../images/temples/idaho_falls_idaho_temple.png"
+    }
+]

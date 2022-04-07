@@ -1,3 +1,34 @@
+:root {
+    /* Theme Colors */
+    --white: #FFFFFF;
+    --dark-grey: #3A3B3C;
+    --accent-grey: #B4B3B3;
+    --orange: #ff9a00;
+    --white-accent: rgba(255, 255, 255, 0.7);
+}
+
 .footer-about-us {
     display: block;
 }
+
+.slider-card {
+    width: 100%;
+}
+
+.slider-card-info {
+    position: absolute;
+    background-color: var(--white-accent);
+    width: 480px;
+    top: 50%;
+    border-radius: 0 50px 0 0;
+}
+
+/*--------------- Temple page  --------------*/
+
+.temple-card-body.info-active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+}
+
+/*------X--------- Temple page  ------X--------*/

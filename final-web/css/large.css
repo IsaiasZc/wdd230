@@ -45,17 +45,54 @@
 /*---------------- Home main  -------------*/
 
 
+/* Weather cards */
 
+main.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    width: 95%;
+    max-width: 1350px;
+    padding: 2rem;
+}
+
+.weather-current {
+    border-bottom: none;
+    border-right: 2px solid var(--dark-grey);
+    width: 30vw;
+}
+
+.weather-next {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.weather-next div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather-next div:nth-child(2) {
+    border: none;
+}
 
 /*---------- Footer ------------*/
 
 div.footer-container { 
     display: grid;
-    grid-template-columns: 30% 30% 40%;
-    row-gap: 6rem ;
+    grid-template-columns: 13% 22% 22% auto;
+    /* row-gap: 2rem ;
+    column-gap: 2rem; */
+    gap: 2rem 2.5rem;
     grid-template-areas: 
-    "a b c"
-    "d d e"
+    "a b c d"
+    "e e e f"
     ;
 }
 
@@ -67,6 +104,7 @@ div.footer-container {
     border-left: 1px solid var(--accent-grey);
     margin: 2rem 0;
     padding: 0 0 0 2rem;
+    grid-area: d;
 }
 
 .footer-div.footer-about-us h2 {
@@ -78,9 +116,70 @@ div.footer-container {
 }
 
 .footer-div.copy {
-    grid-area: d;
+    grid-area: e;
 }
 
 .social-media {
     align-items: center;
 }
+
+.footer-contact iframe {
+    height: 200px;
+}
+
+/*--------------- Temple page  --------------*/
+
+.temple-cards-container,.main-container {
+    margin: 0 auto;
+}
+
+.temple-card-header,.card {
+    display: flex;
+    max-height: 450px;
+}
+
+.temple-card:nth-child(even) .temple-card-img img, .card:nth-child(odd) .card-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+.temple-card:nth-child(odd) .temple-card-img img,.card:nth-child(even) .card-img img {
+    border-radius: 0 10px 10px 0;
+}
+
+.temple-card:nth-child(odd) .temple-card-header-description, .card:nth-child(odd) .card-content {
+    order: 1;
+}
+
+.temple-card:nth-child(odd) .temple-card-img, .card:nth-child(odd) .card-img {
+    order: 2;
+}
+
+
+.temple-card-header-description, .card-content {
+    width: 35vw;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.temple-card-header-description div:first-child {
+    overflow: hidden;
+}
+/*------X--------- Temple page  ------X--------*/
+
+/*--------------- Reservation page  --------------*/
+
+fieldset.reserve-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+    align-items: end;
+}
+
+#locations-select,.reservation_form_label.rooms  {
+    max-height: 35px;
+}
+
+.reservation_form_label.dates {
+    padding: 0;
+}
+/*------X--------- Reservation page  ------X--------*/

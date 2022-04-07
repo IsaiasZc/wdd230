@@ -106,7 +106,7 @@ window.addEventListener("scroll", () => {
 //* --------------------- Days from last visit ----------------------
 
 const visitsDisplay = document.getElementById("visits-display");
-let lastVisit =window.localStorage.getItem("last-visit");
+let lastVisit = window.localStorage.getItem("last-visit");
 lastVisit = lastVisit != null ? lastVisit = new Date(lastVisit) : lastVisit;
 // if(lastVisit != null) {
 //     lastVisit = new Date(lastVisit);
