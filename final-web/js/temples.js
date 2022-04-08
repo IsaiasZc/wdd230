@@ -37,9 +37,20 @@ fetch(templesURL)
             let picture = document.createElement("picture");
             let img = document.createElement("img");
             img.className = "img-cover-all";
-            img.setAttribute("src", element.imgUrl);
+            img.setAttribute("src", element.images[0]);
             img.setAttribute("alt", `logo of ${element.name}`);
             img.setAttribute("loading", "lazy");
+
+            let sourceMed = document.createElement("source");
+            sourceMed.setAttribute("media","(min-width: 40rem) and (max-width: 63.99rem)");
+            sourceMed.setAttribute("srset",element.images[1]);
+            picture.append(sourceMed);
+
+            let sourceLarge = document.createElement("source");
+            sourceLarge.setAttribute("media","(min-width: 64rem)");
+            sourceLarge.setAttribute("srset",element.images[2]);
+            picture.append(sourceLarge);
+
             picture.append(img)
             templeCardImg.append(picture)
             templeCardHeader.append(templeCardImg);
