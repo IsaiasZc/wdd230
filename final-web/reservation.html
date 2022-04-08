@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <title>Temple Inn & Suits | Reservation</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/medium.css" media='screen and (min-width:40rem)'>
@@ -13,8 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Goudy+Bookletter+1911&family=Cormorant+Garamond:wght@300&family=Raleway&display=swap" rel="stylesheet">
-
-    <title>Document</title>
 </head>
 <body>
     <header class="header-container">
@@ -25,7 +23,11 @@
         <nav class="nav">
             <div class="nav-menu flex-column">
                 <div class="nav-back absolute">
-                    <img class="img-cover-all" src="./images/saad-khan-425b2PhNuHA-unsplash.jpg" alt="background">
+                    <picture>
+                        <source media="(min-width: 64rem)" srcset="./images/nav/reservation_large.jpg">
+                        <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/nav/reservation_med.jpg">
+                        <img class="img-cover-all" src="./images/nav/reservation_min.jpg" alt="reservation - room servie">
+                    </picture>
                 </div>
                 <div class="nav-img-filter absolute"></div>
                 <div class="nav-brand absolute">
@@ -159,7 +161,9 @@
             </div>
             <div class="footer-div footer-about-us">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo vitae eveniet aut dignissimos illum! Cupiditate vel in sed quia nemo, omnis mollitia quod error inventore! Eos corrupti culpa quas sint assumenda aliquid eum suscipit, soluta minima voluptatibus repellat quae ipsa illo aspernatur tempora, deserunt officiis dolorum? Repudiandae error doloribus, enim sequi optio quibusdam delectus necessitatibus saepe ea officia dolorum tempora quis voluptates at omnis aspernatur molestiae accusamus </p>
+                <p>Welcome to Temple Inn & Suites, your number one source for all things hotels. We're dedicated to giving you the very best of hotel service, with a focus on Church Temples, Weddings, and Family History. <br>
+                Founded in 2005 by Isaias Zuniga, Temple Inn & Suites has come a long way from its beginnings in Bethesda, MD. When Isaias Zuniga first started out, his passion for hotel service drove him to do intense research, and gave him the impetus to turn hard work and inspiration into to a Global Hotel. We now serve customers all over Country, and are thrilled to be a part of the eco-friendly wing of the hotel industry.
+                </p>
             </div>
             <div class="footer-div footer-form">
                 <h3>Get in Touch</h3>
@@ -177,7 +181,7 @@
             </div>
             <div class="footer-div copy">
                 <p>Temple Inn & Suites</p>
-                <p>&copy;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius ducimus voluptatem adipisci. Repellat, deserunt!</p>
+                <p>&copy;2022 | Isaias Zuñiga | WDD230 | BYU-Idaho </p><span id="lastTime"></span></p>
             </div>
             <div class="social-media">
                 <div class="twitter">

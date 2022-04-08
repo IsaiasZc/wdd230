@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <title>Temple Inn & Suits | Home</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/medium.css" media='screen and (min-width:40rem)'>
@@ -13,8 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./images/Logo/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Goudy+Bookletter+1911&family=Cormorant+Garamond:wght@300&family=Raleway&display=swap" rel="stylesheet">
-
-    <title>Document</title>
 </head>
 <body>
     <header class="header-container">
@@ -25,7 +23,11 @@
         <nav class="nav">
             <div class="nav-menu flex-column">
                 <div class="nav-back absolute">
-                    <img class="img-cover-all" src="./images/saad-khan-425b2PhNuHA-unsplash.jpg" alt="background">
+                    <picture>
+                        <source media="(min-width: 64rem)" srcset="./images/nav/home_large.jpg">
+                        <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/nav/home_med.jpg">
+                        <img class="img-cover-all" src="./images/nav/home_min.jpg" alt="home - hotel in night">
+                    </picture>
                 </div>
                 <div class="nav-img-filter absolute"></div>
                 <div class="nav-brand absolute">
@@ -69,11 +71,13 @@
                     </div>
                 </div>
                 <div class="slider-card">
-                    <div class="slider-card-img"><picture>
-                        <source media="(min-width: 64rem)" srcset="./images/activities/gym-lar.jpg">
-                        <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset=".images/activities/gym-med.jpg">
-                        <img class="img-cover-all" src="./images/activities/gym-main.jpg" alt="Hotel Gym">
-                    </picture></div>
+                    <div class="slider-card-img">
+                        <picture>
+                            <source media="(min-width: 64rem)" srcset="./images/activities/gym-lar.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/activities/gym-med.jpg">
+                            <img class="img-cover-all" src="./images/activities/gym-main.jpg" alt="Hotel Gym">
+                        </picture>
+                    </div>
                     <div class="slider-card-info">
                         <h3>Fully Equiped Gym</h3>
                         <p>Fully equipped gym The fully equipped fitness centre has a comprehensive exercise area including Star Trac cardiovascular machines, weight stations, and more.</p>
@@ -81,10 +85,16 @@
                     </div>
                 </div>
                 <div class="slider-card">
-                    <div class="slider-card-img"><img class="img-cover-all" src="https://picsum.photos/502/500" alt="" class="image-cover"></div>
+                    <div class="slider-card-img">
+                        <picture>
+                            <source media="(min-width: 64rem)" srcset="./images/activities/playroom-lar.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/activities/playroom-med.jpg">
+                            <img class="img-cover-all" src="./images/activities/playroom-main.jpg" alt="Playroom">
+                        </picture>
+                    </div>
                     <div class="slider-card-info">
-                        <h3>Activity Name</h3>
-                        <p>3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, facere doloremque eligendi adipisci possimus deleniti, ullam fugit quae omnis, officiis excepturi</p>
+                        <h3>Play Room</h3>
+                        <p>The space fuses the vibe of game rooms, old and new, making this the ideal after work hangout and sure to provoke creative inspiration.</p>
                         <a href="./reservation.html"><h3>Reserve with us &#x23f5;</h3></a>
                     </div>
                 </div>
@@ -103,32 +113,42 @@
                 <div class="slider-card">
                     <div class="slider-card-img">
                         <picture>
-                            <img class="img-cover-all" src="./images/activities/family-search-main.jpg" alt="">
+                            <source media="(min-width: 64rem)" srcset="./images/temples/bountiful_temple_large.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/temples/bountiful_temple_med.jpg">
+                            <img class="img-cover-all" src="./images/temples/bountiful_temple_min.jpg" alt="Playroom">
                         </picture>
                     </div>
                     <div class="slider-card-info">
-                        <h3>Temple Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <h3>Bountiful Utah Temple</h3>
+                        <p>The Bountiful Utah Temple was the eighth temple built in Utah and the first built in Davis County. The floor plan created for the Bountiful Utah Temple was adapted and used for the Mount Timpanogos Utah Temple.</p>
                         <a href="./reservation.html"><h3>Visit the Temple &#x23f5;</h3></a>
                     </div>
                 </div>
                 <div class="slider-card">
                     <div class="slider-card-img">
-                        <img class="img-cover-all" src="https://picsum.photos/501/500" alt="">
+                        <picture>
+                            <source media="(min-width: 64rem)" srcset="./images/temples/los_angeles_temple_large.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/temples/los_angeles_temple_med.jpg">
+                            <img class="img-cover-all" src="./images/temples/los_angeles_temple_min.jpg" alt="Playroom">
+                        </picture>
                     </div>
                     <div class="slider-card-info">
-                        <h3>Temple Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <h3>Los Angeles California Temple</h3>
+                        <p>The Los Angeles Temple was dedicated on March 11, 1956. The temple is now named the Los Angeles California Temple. Expansions since 1955 of the Salt Lake Temple moved the “largest shrine” title back to Utah.</p>
                         <a href="./reservation.html"><h3>Visit the Temple &#x23f5;</h3></a>
                     </div>
                 </div>
                 <div class="slider-card">
                     <div class="slider-card-img">
-                        <img class="img-cover-all" src="https://picsum.photos/500/500" alt="">
+                        <picture>
+                            <source media="(min-width: 64rem)" srcset="./images/temples/idaho_falls_idaho_temple_large.jpg">
+                            <source media="(min-width: 40rem) and (max-width: 63.99rem)" srcset="./images/temples/idaho_falls_idaho_temple_med.jpg">
+                            <img class="img-cover-all" src="./images/temples/idaho_falls_idaho_temple_min.jpg" alt="Playroom">
+                        </picture>
                     </div>
                     <div class="slider-card-info">
-                        <h3>Temple Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem optio culpa cum recusandae consequuntur, quisquam necessitatibus amet in? Harum.Harum Harum</p>
+                        <h3>Idaho Falls Idaho Temple</h3>
+                        <p>The Idaho Falls Idaho Temple was the first temple built in Idaho and is located on the picturesque banks of the Snake River on 1000 Memorial Drive.</p>
                         <a href="./reservation.html"><h3>Visit the Temple &#x23f5;</h3></a>
                     </div>
                 </div>
@@ -184,7 +204,9 @@
             </div>
             <div class="footer-div footer-about-us">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo vitae eveniet aut dignissimos illum! Cupiditate vel in sed quia nemo, omnis mollitia quod error inventore! Eos corrupti culpa quas sint assumenda aliquid eum suscipit, soluta minima voluptatibus repellat quae ipsa illo aspernatur tempora, deserunt officiis dolorum? Repudiandae error doloribus, enim sequi optio quibusdam delectus necessitatibus saepe ea officia dolorum tempora quis voluptates at omnis aspernatur molestiae accusamus </p>
+                <p>Welcome to Temple Inn & Suites, your number one source for all things hotels. We're dedicated to giving you the very best of hotel service, with a focus on Church Temples, Weddings, and Family History. <br>
+                Founded in 2005 by Isaias Zuniga, Temple Inn & Suites has come a long way from its beginnings in Bethesda, MD. When Isaias Zuniga first started out, his passion for hotel service drove him to do intense research, and gave him the impetus to turn hard work and inspiration into to a Global Hotel. We now serve customers all over Country, and are thrilled to be a part of the eco-friendly wing of the hotel industry.
+                </p>
             </div>
             <div class="footer-div footer-form">
                 <h3>Get in Touch</h3>
@@ -202,8 +224,7 @@
             </div>
             <div class="footer-div copy">
                 <p>Temple Inn & Suites</p>
-                <p>&copy;Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eius ducimus voluptatem adipisci. Repellat, deserunt!</p>
-                <p>Last Modificaton: <span id="lastTime"></span></p>
+                <p>&copy;2022 | Isaias Zuñiga | WDD230 | BYU-Idaho </p><span id="lastTime"></span></p>
             </div>
             <div class="social-media">
                 <div class="twitter">
